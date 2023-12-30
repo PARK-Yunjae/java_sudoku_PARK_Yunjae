@@ -20,27 +20,10 @@ public class Member {
 		return name;
 	}
 	
-	public Member() {}
-	
 	public Member(String id, String pw, String name) {
 		this.memberNum = ++num;
 		this.id = id;
 		this.pw = pw;
 		this.name = name;
-	}
-	
-	private Member(String memberNum, String id, String pw, String name) {
-		this.memberNum = Integer.parseInt(memberNum);
-		this.id = id;
-		this.pw = pw;
-		this.name = name;
-	}
-	
-	private static Member CreateMemeber(String[] info) {
-		if(info == null || info.length == 0) {
-			return null;
-		}
-		
-		return new Member(info[0], info[1], info[2], info[3]);
 	}
 }
