@@ -3,11 +3,19 @@ package panel;
 import java.awt.Color;
 
 import javax.swing.JPanel;
+
+import dao.FileDAO;
+import dao.GameDAO;
+
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import javax.swing.ImageIcon;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Font;
+import javax.swing.SwingConstants;
+
+import Frame.MainFrame;
 
 public class LobbyPanel extends JPanel {
 
@@ -16,11 +24,16 @@ public class LobbyPanel extends JPanel {
 	private JLabel nameLabel;
 
 	public LobbyPanel() {
-		setBackground(new Color(245, 245, 245));
+		setForeground(new Color(240, 240, 240));
+		setBackground(new Color(240, 240, 240));
 		setSize(464, 601);
 		setLayout(null);
 		
 		nameLabel = new JLabel("");
+		nameLabel.setHorizontalTextPosition(SwingConstants.CENTER);
+		nameLabel.setOpaque(true);
+		nameLabel.setForeground(new Color(0, 0, 0));
+		nameLabel.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		nameLabel.setBounds(12, 10, 106, 31);
 		add(nameLabel);
 		
@@ -28,7 +41,16 @@ public class LobbyPanel extends JPanel {
 		// 어려움 난이도 버튼 클릭 시
 		hardButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				GameDAO gDAO = GameDAO.getInstance();
+				GamePanel gp = GamePanel.getInstance();
+				gDAO.AnswerMap();
+				gDAO.LevelMap(3);
+				gDAO.SelectMap(gp.getMap());
+				gp.getLevelLabel().setText("HARD");
+				gp.setMissNum(0);
+				gp.getMissLabel().setText("0/5");
+				gp.setScoreNum(0);
+				gp.getScoreLabel().setText("0");
 				instance.setVisible(false);
 				GamePanel.getInstance().setVisible(true);
 			}
@@ -43,7 +65,16 @@ public class LobbyPanel extends JPanel {
 		// 노말 난이도 버튼 클릭 시
 		normalButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				GameDAO gDAO = GameDAO.getInstance();
+				GamePanel gp = GamePanel.getInstance();
+				gDAO.AnswerMap();
+				gDAO.LevelMap(2);
+				gDAO.SelectMap(gp.getMap());
+				gp.getLevelLabel().setText("NORMAL");
+				gp.setMissNum(0);
+				gp.getMissLabel().setText("0/5");
+				gp.setScoreNum(0);
+				gp.getScoreLabel().setText("0");
 				instance.setVisible(false);
 				GamePanel.getInstance().setVisible(true);
 			}
@@ -58,7 +89,16 @@ public class LobbyPanel extends JPanel {
 		// 쉬움 난이도 버튼 클릭 시
 		easyButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				GameDAO gDAO = GameDAO.getInstance();
+				GamePanel gp = GamePanel.getInstance();
+				gDAO.AnswerMap();
+				gDAO.LevelMap(1);
+				gDAO.SelectMap(gp.getMap());
+				gp.getLevelLabel().setText("EASY");
+				gp.setMissNum(0);
+				gp.getMissLabel().setText("0/5");
+				gp.setScoreNum(0);
+				gp.getScoreLabel().setText("0");
 				instance.setVisible(false);
 				GamePanel.getInstance().setVisible(true);
 			}
@@ -73,6 +113,8 @@ public class LobbyPanel extends JPanel {
 		// 종료 버튼 클릭 시
 		exitButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				FileDAO fDAO = FileDAO.getInstance();
+				fDAO.AutoSave();
 				System.exit(0);
 			}
 		});
@@ -100,7 +142,9 @@ public class LobbyPanel extends JPanel {
 		// 로그아웃 버튼 클릭 시
 		logoutButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				MainFrame mf = MainFrame.getInstance();
+				mf.setId("");
+				mf.setName("");
 				instance.setVisible(false);
 				MainPanel.getInstance().setVisible(true);
 			}

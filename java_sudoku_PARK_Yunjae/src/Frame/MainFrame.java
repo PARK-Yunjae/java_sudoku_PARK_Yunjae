@@ -2,7 +2,7 @@ package Frame;
 
 import javax.swing.JFrame;
 
-import dao.GameDAO;
+import dao.FileDAO;
 import panel.GamePanel;
 import panel.JoinPanel;
 import panel.LobbyPanel;
@@ -55,6 +55,7 @@ public class MainFrame extends JFrame {
 		add(rp);
 		add(gp);
 		
+		FileDAO.getInstance(); // 불러오면 생성자에서 init실행
 	}
 
 }

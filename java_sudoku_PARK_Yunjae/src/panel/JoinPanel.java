@@ -5,10 +5,10 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.Font;
-import java.awt.Image;
 
 import javax.swing.JTextField;
 
+import dao.FileDAO;
 import dao.MemberDAO;
 
 import javax.swing.ImageIcon;
@@ -171,6 +171,9 @@ public class JoinPanel extends JPanel {
 		// 메인 버튼 클릭 시
 		mainButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				idText.setText("");
+				pwText.setText("");
+				nameText.setText("");
 				instance.setVisible(false);
 				MainPanel.getInstance().setVisible(true);
 			}
@@ -187,6 +190,8 @@ public class JoinPanel extends JPanel {
 		// 종료 버튼 클릭 시
 		exitButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				FileDAO fDAO = FileDAO.getInstance();
+				fDAO.AutoSave();
 				System.exit(0);
 			}
 		});
