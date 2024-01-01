@@ -37,13 +37,11 @@ public class RankDAO {
 	public static void FileToData(List<String> data) {
 		if (data.isEmpty())
 			return;
-
 		for (int i = 0; i < data.size(); i += 1) {
 			String[] info = data.get(i).split("/");
-			if (!info[0].equals("1000")) {
-				rList.add(Rank.CreateMember(info));
-			}
+			rList.add(Rank.CreateMember(info));
 		}
+		System.out.println(rList.size());
 	}
 
 	// 스도쿠 클리어 랭크 등록
@@ -57,5 +55,17 @@ public class RankDAO {
 			num = 3;
 		}
 		rList.add(new Rank(name, score, time+"", num));
+	}
+	
+	// 랭크 리스트 테이블 출력용 보내주기
+	public List<Rank> RankList(int level){
+		List<Rank> list =  new ArrayList<Rank>();
+		System.out.println(rList.size());
+		for(int i=0 ; i<rList.size() ; i+=1) {
+			if(rList.get(i).getLevel() == level) {
+				list.add(rList.get(i));
+			}
+		}
+		return list;
 	}
 }

@@ -65,9 +65,7 @@ public class MemberDAO {
 		if (mList.size() == 0)
 			return data;
 		for (Member m : mList) {
-			if (m.getMemberNum() != 1000) {
-				data += m.DataToFile() + "\n";
-			}
+			data += m.DataToFile() + "\n";
 		}
 		data = data.substring(0, data.length() - 1);
 		return data;
@@ -81,11 +79,9 @@ public class MemberDAO {
 		int maxMemberNum = 0;
 		for (int i = 0; i < data.size(); i += 1) {
 			String[] info = data.get(i).split("/");
-			if (!info[0].equals("1000")) {
-				mList.add(Member.CreateMember(info));
-				if (maxMemberNum < Integer.parseInt(info[0])) {
-					maxMemberNum = Integer.parseInt(info[0]);
-				}
+			mList.add(Member.CreateMember(info));
+			if (maxMemberNum < Integer.parseInt(info[0])) {
+				maxMemberNum = Integer.parseInt(info[0]);
 			}
 		}
 		Member.setNum(maxMemberNum);
