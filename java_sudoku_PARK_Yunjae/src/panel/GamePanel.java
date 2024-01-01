@@ -9,6 +9,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
+import javax.swing.Timer;
 
 import Frame.MainFrame;
 import dao.FileDAO;
@@ -24,7 +25,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.ButtonGroup;
 import javax.swing.JRadioButton;
 
-public class GamePanel extends JPanel implements Runnable {
+public class GamePanel extends JPanel {
 
 	private static GamePanel instance = new GamePanel();
 	private static final long serialVersionUID = 1L;
@@ -47,8 +48,23 @@ public class GamePanel extends JPanel implements Runnable {
 	private int missNum = 1;
 	private int scoreNum = 50;
 	private int time = 0;
-	private Thread th = new Thread();
 	private int num;
+	// 이렇게 하면 쓰레드를 쓸수 있네?
+	private Timer t = new Timer(1000, new ActionListener() {
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			time += 1;
+			timeLabel.setText(time + "초");
+		}
+	});
+
+	public void setTime(int time) {
+		this.time = time;
+	}
+
+	public Timer getT() {
+		return t;
+	}
 
 	public JLabel getLevelLabel() {
 		return levelLabel;
@@ -75,6 +91,7 @@ public class GamePanel extends JPanel implements Runnable {
 	}
 
 	public GamePanel() {
+
 		setBackground(new Color(245, 245, 245));
 		setSize(464, 601);
 		setLayout(null);
@@ -85,6 +102,7 @@ public class GamePanel extends JPanel implements Runnable {
 			public void actionPerformed(ActionEvent e) {
 				FileDAO fDAO = FileDAO.getInstance();
 				fDAO.AutoSave();
+				t.stop();
 				System.exit(0);
 			}
 		});
@@ -97,10 +115,12 @@ public class GamePanel extends JPanel implements Runnable {
 		add(exitButton);
 
 		JButton lobbyButton = new JButton("");
+		// 로비 버튼 클릭 시
 		lobbyButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				instance.setVisible(false);
 				LobbyPanel.getInstance().setVisible(true);
+				t.stop();
 			}
 		});
 		lobbyButton.setIcon(new ImageIcon(
@@ -130,7 +150,7 @@ public class GamePanel extends JPanel implements Runnable {
 		scoreLabel.setBounds(238, 10, 100, 30);
 		add(scoreLabel);
 
-		timeLabel = new JLabel("");
+		timeLabel = new JLabel("0");
 		timeLabel.setFont(new Font("맑은 고딕", Font.BOLD, 15));
 		timeLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		timeLabel.setBounds(352, 10, 100, 30);
@@ -230,12 +250,14 @@ public class GamePanel extends JPanel implements Runnable {
 					rDAO.joinRank(mf.getName(), scoreNum, time, levelLabel.getText());
 					instance.setVisible(false);
 					LobbyPanel.getInstance().setVisible(true);
+					t.stop();
 				}
 				// 패배
 				if (missNum == 5) {
 					JOptionPane.showMessageDialog(null, "GAME OVER", "SUDOKU", JOptionPane.PLAIN_MESSAGE);
 					instance.setVisible(false);
 					LobbyPanel.getInstance().setVisible(true);
+					t.stop();
 				}
 			}
 		};
@@ -341,7 +363,7 @@ public class GamePanel extends JPanel implements Runnable {
 		buttonGroup.add(rbErazer);
 		add(rbErazer);
 
-		th.start();
+		t.start();
 		setVisible(false);
 	}
 
@@ -353,18 +375,4 @@ public class GamePanel extends JPanel implements Runnable {
 		return map;
 	}
 
-	@Override
-	public void run() {
-		while (true) {
-			time += 1;
-			timeLabel.setText(time+"");
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-
-		}
-
-	}
 }

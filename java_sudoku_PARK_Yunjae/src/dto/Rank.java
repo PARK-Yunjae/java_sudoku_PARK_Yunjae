@@ -1,6 +1,6 @@
 package dto;
 
-public class Rank {
+public class Rank implements Comparable<Rank> {
 	private String name;
 	private int score;
 	private String time;
@@ -28,7 +28,7 @@ public class Rank {
 		this.time = time;
 		this.level = level;
 	}
-	
+
 	private Rank(String name, String score, String time, String level) {
 		this.name = name;
 		this.score = Integer.parseInt(score);
@@ -42,7 +42,18 @@ public class Rank {
 
 		return new Rank(info[0], info[1], info[2], info[3]);
 	}
+
 	public String DataToFile() {
 		return "%s/%d/%s/%d".formatted(name, score, time, level);
+	}
+
+	@Override
+	public int compareTo(Rank o) {
+		if (this.score < o.score)
+			return 1;
+		else if (this.score > o.score)
+			return -1;
+		else
+			return 0;
 	}
 }

@@ -68,7 +68,7 @@ public class GameDAO {
 
 	// 난이도를 입력하면 거기에 맞는 문제 출시
 	public void LevelMap(int level) {
-		for (int i = 0; i < 40 - (level * 5); i += 1) {
+		for (int i = 0; i < 30 + (level * 5); i += 1) {
 			int x = rd.nextInt(9);
 			int y = rd.nextInt(9);
 

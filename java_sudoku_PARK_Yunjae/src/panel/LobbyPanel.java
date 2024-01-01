@@ -53,6 +53,9 @@ public class LobbyPanel extends JPanel {
 				gp.getScoreLabel().setText("0");
 				instance.setVisible(false);
 				GamePanel.getInstance().setVisible(true);
+				GamePanel.getInstance().getT().start();
+				GamePanel.getInstance().setTime(0);
+				GamePanel.getInstance().getTimeLabel().setText("0초");
 			}
 		});
 		hardButton.setIconTextGap(0);
@@ -77,6 +80,9 @@ public class LobbyPanel extends JPanel {
 				gp.getScoreLabel().setText("0");
 				instance.setVisible(false);
 				GamePanel.getInstance().setVisible(true);
+				GamePanel.getInstance().getT().start();
+				GamePanel.getInstance().setTime(0);
+				GamePanel.getInstance().getTimeLabel().setText("0초");
 			}
 		});
 		normalButton.setIconTextGap(0);
@@ -101,6 +107,9 @@ public class LobbyPanel extends JPanel {
 				gp.getScoreLabel().setText("0");
 				instance.setVisible(false);
 				GamePanel.getInstance().setVisible(true);
+				GamePanel.getInstance().getT().start();
+				GamePanel.getInstance().setTime(0);
+				GamePanel.getInstance().getTimeLabel().setText("0초");
 			}
 		});
 		easyButton.setIconTextGap(0);
