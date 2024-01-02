@@ -62,8 +62,11 @@ public class GameDAO {
 		for (int i = 0; i < 9; i += 1) {
 			for (int k = 0; k < 9; k += 1) {
 				answer[i][k] = problem[i][k];
+				System.out.print(answer[i][k] + " ");
 			}
+			System.out.println();
 		}
+		
 	}
 
 	// 난이도를 입력하면 거기에 맞는 문제 출시

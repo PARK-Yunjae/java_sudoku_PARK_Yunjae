@@ -104,8 +104,8 @@ public class MainPanel extends JPanel {
 		JButton loginButton = new JButton("");
 		loginButton.setIconTextGap(0);
 
-		loginButton.setPressedIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Login_Green.jpg"));
-		loginButton.setIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Login_Blue.jpg"));
+		loginButton.setPressedIcon(new ImageIcon("img\\Login_Green.jpg"));
+		loginButton.setIcon(new ImageIcon("img\\Login_Blue.jpg"));
 		loginButton.setBounds(281, 459, 100, 50);
 
 		// 로그인 버튼 클릭 이벤트
@@ -141,8 +141,8 @@ public class MainPanel extends JPanel {
 
 		JButton joinButton = new JButton("");
 		joinButton.setIconTextGap(0);
-		joinButton.setIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Join_Blue_main.jpg"));
-		joinButton.setPressedIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Join_Green_main.jpg"));
+		joinButton.setIcon(new ImageIcon("img\\Join_Blue_main.jpg"));
+		joinButton.setPressedIcon(new ImageIcon("img\\Join_Green_main.jpg"));
 		joinButton.setBounds(352, 541, 100, 50);
 		// 회원 가입 버튼 클릭 시
 		joinButton.addActionListener(new ActionListener() {
@@ -156,8 +156,8 @@ public class MainPanel extends JPanel {
 		// 종료 버튼
 		JButton exitButton = new JButton("");
 		exitButton.setIconTextGap(0);
-		exitButton.setIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Exit_Blue.jpg"));
-		exitButton.setPressedIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Exit_Green.jpg"));
+		exitButton.setIcon(new ImageIcon("img\\Exit_Blue.jpg"));
+		exitButton.setPressedIcon(new ImageIcon("img\\Exit_Green.jpg"));
 
 		// 종료 버튼 클릭 시
 		exitButton.addActionListener(new ActionListener() {

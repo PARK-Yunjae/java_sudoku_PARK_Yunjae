@@ -41,7 +41,6 @@ public class RankDAO {
 			String[] info = data.get(i).split("/");
 			rList.add(Rank.CreateMember(info));
 		}
-		System.out.println(rList.size());
 	}
 
 	// 스도쿠 클리어 랭크 등록

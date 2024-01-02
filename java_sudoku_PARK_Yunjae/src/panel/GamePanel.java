@@ -107,9 +107,9 @@ public class GamePanel extends JPanel {
 			}
 		});
 		exitButton.setPressedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Exit_Green.jpg"));
+				"img\\Exit_Green.jpg"));
 		exitButton.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Exit_Blue.jpg"));
+				"img\\Exit_Blue.jpg"));
 		exitButton.setIconTextGap(0);
 		exitButton.setBounds(12, 541, 100, 50);
 		add(exitButton);
@@ -124,9 +124,9 @@ public class GamePanel extends JPanel {
 			}
 		});
 		lobbyButton.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Lobby_Blue_Rank.jpg"));
+				"img\\Lobby_Blue_Rank.jpg"));
 		lobbyButton.setPressedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Lobby_Green_Rank.jpg"));
+				"img\\Lobby_Green_Rank.jpg"));
 		lobbyButton.setIconTextGap(0);
 		lobbyButton.setBounds(352, 541, 100, 50);
 		add(lobbyButton);
@@ -269,19 +269,19 @@ public class GamePanel extends JPanel {
 
 		rb1 = new JRadioButton("");
 		rb1.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\one_green.jpg"));
+				"img\\one_green.jpg"));
 		rb1.setIconTextGap(0);
 		rb1.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\one_blue.jpg"));
+				"img\\one_blue.jpg"));
 		rb1.setBounds(12, 452, 40, 40);
 		buttonGroup.add(rb1);
 		add(rb1);
 
 		rb2 = new JRadioButton("");
 		rb2.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\two_green.jpg"));
+				"img\\two_green.jpg"));
 		rb2.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\two_blue.jpg"));
+				"img\\two_blue.jpg"));
 		rb2.setIconTextGap(0);
 		buttonGroup.add(rb2);
 		rb2.setBounds(56, 452, 40, 40);
@@ -289,9 +289,9 @@ public class GamePanel extends JPanel {
 
 		rb3 = new JRadioButton("");
 		rb3.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\three_green.jpg"));
+				"img\\three_green.jpg"));
 		rb3.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\three_blue.jpg"));
+				"img\\three_blue.jpg"));
 		rb3.setIconTextGap(0);
 		rb3.setBounds(100, 452, 40, 40);
 		buttonGroup.add(rb3);
@@ -299,9 +299,9 @@ public class GamePanel extends JPanel {
 
 		rb4 = new JRadioButton("");
 		rb4.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\four_green.jpg"));
+				"img\\four_green.jpg"));
 		rb4.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\four_blue.jpg"));
+				"img\\four_blue.jpg"));
 		rb4.setIconTextGap(0);
 		rb4.setBounds(144, 452, 40, 40);
 		buttonGroup.add(rb4);
@@ -309,9 +309,9 @@ public class GamePanel extends JPanel {
 
 		rb5 = new JRadioButton("");
 		rb5.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\five_green.jpg"));
+				"img\\five_green.jpg"));
 		rb5.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\five_blue.jpg"));
+				"img\\five_blue.jpg"));
 		rb5.setIconTextGap(0);
 		rb5.setBounds(188, 452, 40, 40);
 		buttonGroup.add(rb5);
@@ -319,9 +319,9 @@ public class GamePanel extends JPanel {
 
 		rb6 = new JRadioButton("");
 		rb6.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\six_green.jpg"));
+				"img\\six_green.jpg"));
 		rb6.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\six_blue.jpg"));
+				"img\\six_blue.jpg"));
 		rb6.setIconTextGap(0);
 		rb6.setBounds(232, 452, 40, 40);
 		buttonGroup.add(rb6);
@@ -329,36 +329,36 @@ public class GamePanel extends JPanel {
 
 		rb7 = new JRadioButton("");
 		rb7.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\seven_green.jpg"));
+				"img\\seven_green.jpg"));
 		rb7.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\seven_blue.jpg"));
+				"img\\seven_blue.jpg"));
 		rb7.setBounds(276, 452, 40, 40);
 		buttonGroup.add(rb7);
 		add(rb7);
 
 		rb8 = new JRadioButton("");
 		rb8.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\eight_green.jpg"));
+				"img\\eight_green.jpg"));
 		rb8.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\eight_blue.jpg"));
+				"img\\eight_blue.jpg"));
 		rb8.setBounds(320, 452, 40, 40);
 		buttonGroup.add(rb8);
 		add(rb8);
 
 		rb9 = new JRadioButton("");
 		rb9.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\nine_green.jpg"));
+				"img\\nine_green.jpg"));
 		rb9.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\nine_blue.jpg"));
+				"img\\nine_blue.jpg"));
 		rb9.setBounds(364, 452, 40, 40);
 		buttonGroup.add(rb9);
 		add(rb9);
 
 		rbErazer = new JRadioButton("");
 		rbErazer.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\eraizer_green.jpg"));
+				"img\\eraizer_green.jpg"));
 		rbErazer.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\eraizer_blue.jpg"));
+				"img\\eraizer_blue.jpg"));
 		rbErazer.setBounds(412, 452, 40, 40);
 		buttonGroup.add(rbErazer);
 		add(rbErazer);

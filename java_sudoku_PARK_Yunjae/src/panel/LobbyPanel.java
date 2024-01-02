@@ -59,8 +59,8 @@ public class LobbyPanel extends JPanel {
 			}
 		});
 		hardButton.setIconTextGap(0);
-		hardButton.setPressedIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Hard_Green.jpg"));
-		hardButton.setIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Hard_Blue.jpg"));
+		hardButton.setPressedIcon(new ImageIcon("img\\Hard_Green.jpg"));
+		hardButton.setIcon(new ImageIcon("img\\Hard_Blue.jpg"));
 		hardButton.setBounds(132, 100, 200, 80);
 		add(hardButton);
 		
@@ -86,8 +86,8 @@ public class LobbyPanel extends JPanel {
 			}
 		});
 		normalButton.setIconTextGap(0);
-		normalButton.setIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Normal_Blue.jpg"));
-		normalButton.setPressedIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Normal_Green.jpg"));
+		normalButton.setIcon(new ImageIcon("img\\Normal_Blue.jpg"));
+		normalButton.setPressedIcon(new ImageIcon("img\\Normal_Green.jpg"));
 		normalButton.setBounds(132, 200, 200, 80);
 		add(normalButton);
 		
@@ -113,8 +113,8 @@ public class LobbyPanel extends JPanel {
 			}
 		});
 		easyButton.setIconTextGap(0);
-		easyButton.setPressedIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Easy_Green.jpg"));
-		easyButton.setIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Easy_Blue.jpg"));
+		easyButton.setPressedIcon(new ImageIcon("img\\Easy_Green.jpg"));
+		easyButton.setIcon(new ImageIcon("img\\Easy_Blue.jpg"));
 		easyButton.setBounds(132, 300, 200, 80);
 		add(easyButton);
 		
@@ -127,9 +127,9 @@ public class LobbyPanel extends JPanel {
 				System.exit(0);
 			}
 		});
-		exitButton.setIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Exit_Blue.jpg"));
+		exitButton.setIcon(new ImageIcon("img\\Exit_Blue.jpg"));
 		exitButton.setIconTextGap(0);
-		exitButton.setPressedIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Exit_Green.jpg"));
+		exitButton.setPressedIcon(new ImageIcon("img\\Exit_Green.jpg"));
 		exitButton.setBounds(12, 541, 100, 50);
 		add(exitButton);
 		
@@ -142,8 +142,8 @@ public class LobbyPanel extends JPanel {
 			}
 		});
 		rankButton.setIconTextGap(0);
-		rankButton.setPressedIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Rank_Green.jpg"));
-		rankButton.setIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Rank_Blue.jpg"));
+		rankButton.setPressedIcon(new ImageIcon("img\\Rank_Green.jpg"));
+		rankButton.setIcon(new ImageIcon("img\\Rank_Blue.jpg"));
 		rankButton.setBounds(181, 541, 100, 50);
 		add(rankButton);
 		
@@ -159,8 +159,8 @@ public class LobbyPanel extends JPanel {
 			}
 		});
 		logoutButton.setIconTextGap(0);
-		logoutButton.setIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Logout_Blue.jpg"));
-		logoutButton.setPressedIcon(new ImageIcon("C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Logout_Green.jpg"));
+		logoutButton.setIcon(new ImageIcon("img\\Logout_Blue.jpg"));
+		logoutButton.setPressedIcon(new ImageIcon("img\\Logout_Green.jpg"));
 		logoutButton.setBounds(352, 541, 100, 50);
 		add(logoutButton);
 		
