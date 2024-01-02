@@ -68,9 +68,9 @@ public class RankPanel extends JPanel {
 		
 		
 		exitButton.setPressedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Exit_Green.jpg"));
+				"img\\Exit_Green.jpg"));
 		exitButton.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Exit_Blue.jpg"));
+				"img\\Exit_Blue.jpg"));
 		exitButton.setIconTextGap(0);
 		exitButton.setBounds(12, 541, 100, 50);
 		add(exitButton);
@@ -84,16 +84,16 @@ public class RankPanel extends JPanel {
 			}
 		});
 		lobbyButton.setPressedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Lobby_Green_Rank.jpg"));
+				"img\\Lobby_Green_Rank.jpg"));
 		lobbyButton.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Lobby_Blue_Rank.jpg"));
+				"img\\Lobby_Blue_Rank.jpg"));
 		lobbyButton.setIconTextGap(0);
 		lobbyButton.setBounds(352, 541, 100, 50);
 		add(lobbyButton);
 		// 쉬움 랭크 보기 클릭 시
 		JRadioButton easyRankButton = new JRadioButton("");
 		easyRankButton.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Easy_Green_Rank.jpg"));
+				"img\\Easy_Green_Rank.jpg"));
 		// 이지 버튼
 		easyRankButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -118,7 +118,7 @@ public class RankPanel extends JPanel {
 		});
 
 		easyRankButton.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Easy_Blue_Rank.jpg"));
+				"img\\Easy_Blue_Rank.jpg"));
 		easyRankButton.setIconTextGap(0);
 		easyRankButton.setBounds(61, 480, 100, 50);
 		buttonGroup.add(easyRankButton);
@@ -126,7 +126,7 @@ public class RankPanel extends JPanel {
 
 		JRadioButton normalRankButton = new JRadioButton("");
 		normalRankButton.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Normal_Green_Rank.jpg"));
+				"img\\Normal_Green_Rank.jpg"));
 		// 노말 버튼
 		normalRankButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -150,7 +150,7 @@ public class RankPanel extends JPanel {
 			}
 		});
 		normalRankButton.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Normal_Blue_Rank.jpg"));
+				"img\\Normal_Blue_Rank.jpg"));
 		normalRankButton.setIconTextGap(0);
 		normalRankButton.setBounds(181, 480, 100, 50);
 		buttonGroup.add(normalRankButton);
@@ -158,7 +158,7 @@ public class RankPanel extends JPanel {
 
 		JRadioButton highRankButton = new JRadioButton("");
 		highRankButton.setSelectedIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Hard_Green_Rank.jpg"));
+				"img\\Hard_Green_Rank.jpg"));
 		// 하드 버튼
 		highRankButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -182,7 +182,7 @@ public class RankPanel extends JPanel {
 			}
 		});
 		highRankButton.setIcon(new ImageIcon(
-				"C:\\gitWorkspace\\.git\\java_sudoku_PARK_Yunjae\\java_sudoku_PARK_Yunjae\\img\\Hard_Blue_Rank.jpg"));
+				"img\\Hard_Blue_Rank.jpg"));
 		highRankButton.setIconTextGap(0);
 		highRankButton.setBounds(301, 480, 100, 50);
 		buttonGroup.add(highRankButton);
